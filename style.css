@@ -1,0 +1,352 @@
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #2c3e50;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #0056b3;
+  outline: none;
+}
+
+/* Header */
+header {
+  background-color: #1e2a38;
+  color: #f1f5f9;
+  padding: 30px 40px;
+  box-shadow: 0 4px 8px rgb(30 42 56 / 0.15);
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.title-group h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.title-group p {
+  font-size: 1.125rem;
+  color: #a9b3c1;
+}
+
+/* Buttons in Header */
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.header-download-btn {
+  border: 2px solid #f1f5f9;
+  color: #f1f5f9;
+  background-color: transparent;
+  padding: 12px 26px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-download-btn:hover,
+.header-download-btn:focus {
+  background-color: #f1f5f9;
+  color: #1e2a38;
+}
+
+/* Section Styling */
+section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 8px;
+  max-width: max-content;
+  color: #34495e;
+}
+
+/* About Section */
+#about p {
+  font-size: 1.125rem;
+  color: #4a5568;
+  max-width: 720px;
+  line-height: 1.75;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.skill-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  padding: 25px 30px;
+  width: 48%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 0.12);
+}
+
+.skill-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.skill-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555d66;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgb(0 0 0 / 0.12);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+}
+
+.project h3 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.project p {
+  color: #555d66;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgb(0 123 255 / 0.4);
+  margin-top: 12px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #0056b3; /* professional hover color */
+  color: white; /* ensures text remains visible */
+  box-shadow: 0 6px 18px rgb(0 86 179 / 0.6);
+  transform: translateY(-2px);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Contact Section */
+#contact p {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 12px;
+  max-width: 720px;
+}
+
+#contact a {
+  color: #007bff;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+form {
+  margin-top: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgb(0 123 255 / 0.4);
+}
+
+textarea {
+  min-height: 110px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgb(0 123 255 / 0.4);
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 18px rgb(0 86 179 / 0.6);
+}
+
+/* Footer */
+footer {
+  background-color: #1e2a38;
+  color: #f1f5f9;
+  padding: 25px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 -4px 8px rgb(30 42 56 / 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .skill-box {
+    width: 100% !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 25px 20px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .title-group h1 {
+    font-size: 2rem;
+  }
+
+  .title-group p {
+    font-size: 1rem;
+  }
+
+  .header-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-download-btn {
+    padding: 12px 24px;
+  }
+}

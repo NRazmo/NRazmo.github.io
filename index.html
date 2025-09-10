@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikola Razmoski | Computer Science & AI Student | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta name="description" content="Portfolio of Nikola Razmoski, Computer Science & AI student with skills in C#, PHP, JavaScript, SQL, and web development." />
+
+  <!-- Open Graph for LinkedIn/SEO -->
+  <meta property="og:title" content="Nikola Razmoski | Portfolio" />
+  <meta property="og:description" content="Computer Science & AI student skilled in software and web development." />
+  <meta property="og:image" content="images/favicon.png" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="title-group">
+        <h1>Nikola Razmoski</h1>
+        <p>Computer Science & AI Student | Aspiring Software Developer</p>
+      </div>
+      <div class="header-buttons">
+        <a href="files/Placement-CV.pdf" class="header-download-btn" download>Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Nikola Razmoski, a Computer Science and Artificial Intelligence student passionate about 
+      software development and problem solving. I enjoy building web applications, exploring databases, 
+      and working with modern development tools. I am seeking a year-long placement as a Software Engineer or Web Developer where I can contribute 
+      my skills in C#, PHP, SQL, and full-stack web development to real-world projects, while expanding 
+      my technical expertise and industry experience.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3>Programming</h3>
+        <ul>
+          <li>C#</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+          <li>HTML & CSS</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Web Development Tools</h3>
+        <ul>
+          <li>WordPress</li>
+          <li>Visual Studio / VS Code</li>
+          <li>XAMPP</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Database Management</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>SQLite</li>
+          <li>PhpMyAdmin</li>
+          <li>DB Browser</li>
+          <li>ERD Design</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Other Skills</h3>
+        <ul>
+          <li>Testing & Debugging</li>
+          <li>Troubleshooting</li>
+          <li>Data Handling</li>
+          <li>Content Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project">
+        <img src="images/problem.jpg" alt="C# Problem Solving Suite console app interface">
+        <h3>C# Problem-Solving Suite</h3>
+        <p>
+          Developed a menu-driven toolkit including utilities like an energy calculator, 
+          product list, and encoder, with full error handling and testing.
+        </p>
+        <ul>
+          <li><strong>Tech:</strong> C#</li>
+          <li><strong>Role:</strong> Developer (logic, testing, error handling)</li>
+        </ul>
+        <a href="https://github.com/NRazmo/Problem-Solving-Suite.git" target="_blank" class="btn">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <img src="images/task.png" alt="Task Management System dashboard screenshot">
+        <h3>Task Management System</h3>
+        <p>
+          Built a secure web application for personal and group task management, featuring 
+          authentication, categorization, and progress tracking.
+        </p>
+        <ul>
+          <li><strong>Tech:</strong> PHP, MySQL, HTML, CSS</li>
+          <li><strong>Role:</strong> Full-stack developer (auth, database, UI)</li>
+        </ul>
+        <a href="https://github.com/NRazmo/Task-Management-System.git" target="_blank" class="btn">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <img src="images/transaction.jpg" alt="Banking Authorization System transaction security interface">
+        <h3>Banking Authorization System</h3>
+        <p>
+          Led a team of 6 to create a secure banking app with Transaction Authorization Codes (TAC) 
+          for high-value transfers, secure login, and admin controls.
+        </p>
+        <ul>
+          <li><strong>Tech:</strong> PHP, MySQL, HTML, CSS</li>
+          <li><strong>Role:</strong> Group Leader (task allocation, deadlines, delivery)</li>
+        </ul>
+        <a href="https://github.com/NRazmo/Group-Project-32-.git" target="_blank" class="btn">View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:nickrazmo@gmail.com">nickrazmo@gmail.com</a></p>
+    <p>Connect with me on <a href="https://linkedin.com/in/nikola-razmoski-90705232a" target="_blank">LinkedIn</a> or check my work on <a href="https://github.com/NRazmo" target="_blank">GitHub</a>.</p>
+
+    <h3>Get in Touch</h3>
+    <form action="https://formspree.io/f/mvgbdeog" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="hidden" name="_next" value="thankyou.html" />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nikola Razmoski | Portfolio</p>
+  </footer>
+</body>
+</html>
