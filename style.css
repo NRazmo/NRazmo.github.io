@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset & Base */
 *,
 *::before,
@@ -81,6 +85,34 @@ header {
 .header-download-btn:focus {
   background-color: #f1f5f9;
   color: #1e2a38;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.06);
+}
+
+.nav-links {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #2c3e50;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
 }
 
 /* Section Styling */
@@ -170,7 +202,7 @@ h2 {
 
 .project img {
   width: 100%;
-  height: auto;
+  height: 220px;
   border-radius: 10px;
   margin-bottom: 15px;
   object-fit: cover;
@@ -216,8 +248,10 @@ h2 {
 
 .btn:hover,
 .btn:focus {
-  background-color: #0056b3; /* professional hover color */
-  color: white; /* ensures text remains visible */
+  background-color: #0056b3;
+  /* professional hover color */
+  color: white;
+  /* ensures text remains visible */
   box-shadow: 0 6px 18px rgb(0 86 179 / 0.6);
   transform: translateY(-2px);
   text-decoration: none;

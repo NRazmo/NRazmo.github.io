@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikola Razmoski | Computer Science & AI Student | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
-  <meta name="description" content="Portfolio of Nikola Razmoski, Computer Science & AI student with skills in C#, PHP, JavaScript, SQL, and web development." />
+  <meta name="description"
+    content="Portfolio of Nikola Razmoski, Computer Science & AI student with skills in C#, PHP, JavaScript, SQL, and web development." />
 
   <!-- Open Graph for LinkedIn/SEO -->
   <meta property="og:title" content="Nikola Razmoski | Portfolio" />
@@ -14,9 +16,18 @@
   <meta property="og:image" content="images/favicon.png" />
   <meta property="og:type" content="website" />
 </head>
+
 <body>
   <!-- Header -->
   <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <div class="header-content">
       <div class="title-group">
         <h1>Nikola Razmoski</h1>
@@ -32,10 +43,16 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Hello! I'm Nikola Razmoski, a Computer Science and Artificial Intelligence student passionate about 
-      software development and problem solving. I enjoy building web applications, exploring databases, 
-      and working with modern development tools. I am seeking a year-long placement as a Software Engineer or Web Developer where I can contribute 
-      my technical skills in full-stack development to real-world projects, while expanding my technical expertise and industry experience.
+      Hello! I'm Nikola Razmoski, a Computer Science and Artificial Intelligence student at Sheffield Hallam University with
+      a strong interest in software engineering, machine learning, and full-stack web development.
+    
+      I enjoy building practical, data-driven applications that solve real-world problems — from AI-powered geospatial
+      analytics pipelines to responsive real-time web systems. Through university and personal projects, I have developed
+      experience in machine learning, front-end and back-end development, API integration, database systems, and Agile team
+      collaboration.
+    
+      I am currently seeking a year-long placement opportunity where I can contribute to real-world software projects while
+      continuing to develop my technical and professional skills.
     </p>
   </section>
 
@@ -93,10 +110,51 @@
     <div class="projects-grid">
 
       <div class="project">
+        <img src="images/sheffield-eda-trends.png" alt="Sheffield Urban Road Safety AI analysis">
+        <h3>Sheffield Urban Road Safety AI Pipeline</h3>
+
+        <p>
+          Developed an end-to-end machine learning and geospatial analytics pipeline
+          using UK Department for Transport collision data to identify accident hotspots,
+          predict crash severity, and support data-driven urban planning decisions.
+        </p>
+
+        <ul>
+          <li><strong>Tech:</strong> Python, Pandas, Scikit-learn, Seaborn, Matplotlib</li>
+          <li><strong>Role:</strong> Data engineering, ML modelling, geospatial analysis</li>
+        </ul>
+
+        <a href="https://github.com/NRazmo/ai-machine-learning.git" target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
+        <img src="images/velocity-system-visualization.png" alt="Velociti National Rail Mapping System interface">
+
+        <h3>Velociti National Rail Mapping System</h3>
+
+        <p>
+          Collaborated within an Agile development team to build a real-time national
+          rail mapping application featuring live train tracking, interactive route
+          visualisation, responsive UI design, and API-driven data integration.
+        </p>
+
+        <ul>
+          <li><strong>Tech:</strong> React, TypeScript, Chakra UI, Leaflet, Socket.io</li>
+          <li><strong>Role:</strong> Front-end development, route visualisation, Scrum collaboration</li>
+        </ul>
+
+        <a href="https://github.com/koenigone/VELOCITI.git" target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
         <img src="images/problem.jpg" alt="C# Problem Solving Suite console app interface">
         <h3>C# Problem-Solving Suite</h3>
         <p>
-          Developed a menu-driven toolkit including utilities like an energy calculator, 
+          Developed a menu-driven toolkit including utilities like an energy calculator,
           product list, and encoder, with full error handling and testing.
         </p>
         <ul>
@@ -110,7 +168,7 @@
         <img src="images/task.png" alt="Task Management System dashboard screenshot">
         <h3>Task Management System</h3>
         <p>
-          Built a secure web application for personal and group task management, featuring 
+          Built a secure web application for personal and group task management, featuring
           authentication, categorization, and progress tracking.
         </p>
         <ul>
@@ -124,7 +182,7 @@
         <img src="images/transaction.jpg" alt="Banking Authorization System transaction security interface">
         <h3>Banking Authorization System</h3>
         <p>
-          Led a team of 6 to create a secure banking app with Transaction Authorization Codes (TAC) 
+          Led a team of 6 to create a secure banking app with Transaction Authorization Codes (TAC)
           for high-value transfers, secure login, and admin controls.
         </p>
         <ul>
@@ -134,52 +192,6 @@
         <a href="https://github.com/NRazmo/Group-Project-32-.git" target="_blank" class="btn">View on GitHub</a>
       </div>
 
-      <div class="project">
-        <img src="images/sheffield-eda-trends.png" alt="Sheffield Urban Road Safety AI analysis">
-        <h3>Sheffield Urban Road Safety AI Pipeline</h3>
-
-      <p>
-        Developed an end-to-end machine learning and geospatial analytics pipeline
-        using UK Department for Transport collision data to identify accident hotspots,
-        predict crash severity, and support data-driven urban planning decisions.
-      </p>
-
-      <ul>
-        <li><strong>Tech:</strong> Python, Pandas, Scikit-learn, Seaborn, Matplotlib</li>
-        <li><strong>Role:</strong> Data engineering, ML modelling, geospatial analysis</li>
-      </ul>
-
-      <a href="https://github.com/NRazmo/ai-machine-learning.git"
-      target="_blank"
-      class="btn">
-      View on GitHub
-      </a>
-      </div>
-
-      <div class="project">
-  <img src="images/velocity-system-visualization.png" alt="Velociti National Rail Mapping System interface">
-
-  <h3>Velociti National Rail Mapping System</h3>
-
-  <p>
-    Collaborated within an Agile development team to build a real-time national
-    rail mapping application featuring live train tracking, interactive route
-    visualisation, responsive UI design, and API-driven data integration.
-  </p>
-
-  <ul>
-    <li><strong>Tech:</strong> React, TypeScript, Chakra UI, Leaflet, Socket.io</li>
-    <li><strong>Role:</strong> Front-end development, route visualisation, Scrum collaboration</li>
-  </ul>
-
-  <a href="https://github.com/koenigone/VELOCITI.git"
-     target="_blank"
-     class="btn">
-     View on GitHub
-  </a>
-</div>
-
-
     </div>
   </section>
 
@@ -187,7 +199,8 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>You can reach me at <a href="mailto:nickrazmo@gmail.com">nickrazmo@gmail.com</a></p>
-    <p>Connect with me on <a href="https://linkedin.com/in/nikola-razmoski-90705232a" target="_blank">LinkedIn</a> or check my work on <a href="https://github.com/NRazmo" target="_blank">GitHub</a>.</p>
+    <p>Connect with me on <a href="https://linkedin.com/in/nikola-razmoski-90705232a" target="_blank">LinkedIn</a> or
+      check my work on <a href="https://github.com/NRazmo" target="_blank">GitHub</a>.</p>
 
     <h3>Get in Touch</h3>
     <form action="https://formspree.io/f/mvgbdeog" method="POST">
@@ -210,4 +223,5 @@
     <p>© 2025 Nikola Razmoski | Portfolio</p>
   </footer>
 </body>
+
 </html>
