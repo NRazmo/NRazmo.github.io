@@ -3,6 +3,7 @@ html {
 }
 
 /* Reset & Base */
+
 *,
 *::before,
 *::after {
@@ -22,6 +23,7 @@ body {
 }
 
 /* Links */
+
 a {
   color: #007bff;
   text-decoration: none;
@@ -34,47 +36,51 @@ a:focus {
   outline: none;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
+
 header {
   background-color: #1e2a38;
   color: #f1f5f9;
-  padding: 30px 40px;
+  padding: 45px 40px 35px;
   box-shadow: 0 4px 8px rgb(30 42 56 / 0.15);
 }
 
 .header-content {
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
 }
 
 .title-group h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 6px;
 }
 
 .title-group p {
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   color: #a9b3c1;
 }
 
-/* Buttons in Header */
+/* Header Buttons / Links */
+
 .header-buttons {
   display: flex;
-  gap: 12px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
 }
 
+/* Download CV */
+
 .header-download-btn {
+  display: inline-block;
   border: 2px solid #f1f5f9;
   color: #f1f5f9;
   background-color: transparent;
-  padding: 12px 26px;
+  padding: 12px 28px;
   border-radius: 6px;
   font-weight: 600;
   font-size: 1rem;
@@ -88,7 +94,34 @@ header {
   color: #1e2a38;
 }
 
-/* Section Styling */
+/* LinkedIn / GitHub / Email */
+
+.header-link {
+  color: #f1f5f9;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #66b3ff;
+}
+
+/* Vertical separators between header links */
+
+.header-link:not(:last-child)::after {
+  content: "|";
+  color: #657384;
+  margin-left: 25px;
+  pointer-events: none;
+}
+
+/* =========================
+   SECTION STYLING
+========================= */
+
 section {
   max-width: 1100px;
   margin: 70px auto;
@@ -105,7 +138,10 @@ h2 {
   color: #34495e;
 }
 
-/* About Section */
+/* =========================
+   ABOUT SECTION
+========================= */
+
 #about p {
   font-size: 1.125rem;
   color: #4a5568;
@@ -113,7 +149,10 @@ h2 {
   line-height: 1.75;
 }
 
-/* Skills Section */
+/* =========================
+   SKILLS SECTION
+========================= */
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -150,7 +189,10 @@ h2 {
   line-height: 1.6;
 }
 
-/* Projects Section */
+/* =========================
+   PROJECTS SECTION
+========================= */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -224,7 +266,10 @@ h2 {
   color: white;
 }
 
-/* Contact Section */
+/* =========================
+   CONTACT SECTION
+========================= */
+
 #contact p {
   font-size: 1.125rem;
   color: #4a5568;
@@ -296,7 +341,10 @@ button[type="submit"]:hover {
   box-shadow: 0 6px 18px rgb(0 86 179 / 0.6);
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
   background-color: #1e2a38;
   color: #f1f5f9;
@@ -307,8 +355,12 @@ footer {
   box-shadow: 0 -4px 8px rgb(30 42 56 / 0.2);
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 1024px) {
+
   .skills-container {
     flex-direction: column;
   }
@@ -322,15 +374,38 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+/* Tablet / Smaller Desktop */
+
+@media (max-width: 768px) {
+
   header {
-    padding: 25px 20px;
+    padding: 35px 25px;
+  }
+
+  .title-group h1 {
+    font-size: 2.4rem;
+  }
+
+  .header-buttons {
+    gap: 15px;
+  }
+
+  .header-link:not(:last-child)::after {
+    margin-left: 15px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  header {
+    padding: 30px 20px;
   }
 
   .header-content {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
   }
 
   .title-group h1 {
@@ -345,9 +420,22 @@ footer {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
   }
 
   .header-download-btn {
     padding: 12px 24px;
+  }
+
+  .header-link:not(:last-child)::after {
+    display: none;
+  }
+
+  section {
+    margin: 50px auto;
+  }
+
+  h2 {
+    font-size: 1.7rem;
   }
 }
