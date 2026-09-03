@@ -36,54 +36,53 @@ a:focus {
   outline: none;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* Header */
 
 header {
   background-color: #1e2a38;
   color: #f1f5f9;
-  padding: 45px 40px 35px;
+  padding: 24px 40px 0;
   box-shadow: 0 4px 8px rgb(30 42 56 / 0.15);
 }
 
 .header-content {
   max-width: 1100px;
   margin: 0 auto;
+  padding-bottom: 24px;
 }
 
 .title-group h1 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
+  color: #f1f5f9;
 }
 
 .title-group p {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   color: #a9b3c1;
+  margin: 0;
 }
 
-/* Header Buttons / Links */
+/* Header Links */
 
-.header-buttons {
+.header-links {
   display: flex;
   align-items: center;
+  gap: 14px;
+  margin-top: 18px;
   flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 25px;
 }
-
-/* Download CV */
 
 .header-download-btn {
   display: inline-block;
-  border: 2px solid #f1f5f9;
+  border: 1.5px solid #f1f5f9;
   color: #f1f5f9;
   background-color: transparent;
-  padding: 12px 28px;
-  border-radius: 6px;
+  padding: 7px 13px;
+  border-radius: 5px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -94,28 +93,63 @@ header {
   color: #1e2a38;
 }
 
-/* LinkedIn / GitHub / Email */
-
 .header-link {
   color: #f1f5f9;
+  font-size: 0.85rem;
   font-weight: 600;
-  font-size: 1rem;
-  padding: 8px 0;
   transition: color 0.3s ease;
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: #66b3ff;
+  color: #a9b3c1;
 }
 
-/* Vertical separators between header links */
+.header-divider {
+  color: #64748b;
+  font-size: 0.9rem;
+}
 
-.header-link:not(:last-child)::after {
-  content: "|";
-  color: #657384;
-  margin-left: 25px;
-  pointer-events: none;
+/* Navigation */
+
+.main-nav {
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  height: 42px;
+}
+
+.main-nav a {
+  position: relative;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  color: #cbd5e1;
+  font-size: 0.7rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #ffffff;
+}
+
+.main-nav a:first-child {
+  color: #ffffff;
+}
+
+.main-nav a:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #007bff;
 }
 
 /* =========================
@@ -359,83 +393,49 @@ footer {
    RESPONSIVE
 ========================= */
 
-@media (max-width: 1024px) {
-
-  .skills-container {
-    flex-direction: column;
-  }
-
-  .skill-box {
-    width: 100% !important;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Tablet / Smaller Desktop */
-
-@media (max-width: 768px) {
-
-  header {
-    padding: 35px 25px;
-  }
-
-  .title-group h1 {
-    font-size: 2.4rem;
-  }
-
-  .header-buttons {
-    gap: 15px;
-  }
-
-  .header-link:not(:last-child)::after {
-    margin-left: 15px;
-  }
-}
-
-/* Mobile */
-
 @media (max-width: 480px) {
 
   header {
-    padding: 30px 20px;
+    padding: 20px 20px 0;
   }
 
   .header-content {
-    flex-direction: column;
-    align-items: flex-start;
+    padding-bottom: 20px;
   }
 
   .title-group h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .title-group p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
-  .header-buttons {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
+  .header-links {
     gap: 10px;
+    margin-top: 15px;
   }
 
   .header-download-btn {
-    padding: 12px 24px;
+    padding: 7px 10px;
+    font-size: 0.75rem;
   }
 
-  .header-link:not(:last-child)::after {
+  .header-link {
+    font-size: 0.78rem;
+  }
+
+  .header-divider {
     display: none;
   }
 
-  section {
-    margin: 50px auto;
+  .main-nav {
+    gap: 25px;
+    overflow-x: auto;
   }
 
-  h2 {
-    font-size: 1.7rem;
+  .main-nav a {
+    font-size: 0.65rem;
+    white-space: nowrap;
   }
 }
